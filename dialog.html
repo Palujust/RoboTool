@@ -1,39 +1,25 @@
-<!DOCTYPE html><html><head><title>Send Data to RoboTool</title></head><body>
-<h3>Selection:</h3>
-<hr> <br>
-<form id="data_form" action="">
-	<input type="radio" id="selectedTextRadio" name="data_source" value="selectedText"><label id="lbl_selectedText"></label><br>
-	<input type="radio" id="URLRadio" name="data_source" value="URL"><label id="lbl_URL"></label>
-	<br>
-	<br>
-	Store as: 
-	<select>
-		<option value="">Login Page URL</option>
-  		<option value="">Login Page Regex</option>
- 		<option value="">Invalid Creds Regex</option>
-  		<option value="">Invalid Creds Regex 2 [Optional]</option>
-  		<option value="">Logged in page Regex</option>
-  		<option value="">Post URL (log-in)</option>
- 		<option value="">User name field selector [Phantom]</option>
-  		<option value="">Password field selector [Phantom]</option>
-  		<option value="">Submit button selector [Phantom]</option>
-  		<option value="">Account number selector</option>
-  		<option value="">Account table selector [optional]</option>
-  		<option value="">Billing Page URL</option>
- 		<option value="">Billing Page Regex</option>
-  		<option value="">Billing Table Row selector</option>
-  		<option value="">Billing Table Data - Amount [optional]</option>
-  		<option value="">Billing Table Data - Date</option>
-  		<option value="">Billing Table Row - Bill Link</option>
-  		<option value="">Billing Table Row - Due Date [optional]</option>
-  		<option value="">Billing Table Row - Tax [optional]</option>
-  		<option value="">Billing Table Row - Invoice Number/Custom [optional]</option>
-  		<option value="">Billing Table Row - Payment Method [optional]</option>
-  		<option value="">Billing Table Row - Payment Account Number [optional]</option>
-	</select>
-	<a href="#" id="saveButton" class="clearButton">Save</a>
-</form>
-<script src="JS/jquery-ui/external/jquery/jquery.js"></script>
-<script src="JS/dialog.js"></script>
-<link rel="stylesheet" type="text/css" href="CSS/styles.css">
-</body></html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Send Data to RoboTool</title>
+		<script src="JS/jquery.js"></script>
+		<script src="JS/milestones.js"></script>
+		<script src="JS/populateSelect.js"></script>
+	</head>
+	<body>
+		<h3>Selection:</h3>
+		<hr> <br>
+		<form id="data_form" action="">
+			<input type="radio" id="selectedTextRadio" name="data_source" value="selectedText"><label id="lbl_selectedText"></label><br>
+			<input type="radio" id="URLRadio" name="data_source" value="URL"><label id="lbl_URL"></label>
+			<br>
+			<br>
+			Store as:
+			<select id="milestone_list"></select>
+			<a href="#" id="saveButton" class="clearButton">Save</a>
+		</form>
+		<script src="JS/jquery-ui/external/jquery/jquery.js"></script>
+		<script src="JS/dialog.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	</body>
+</html>
