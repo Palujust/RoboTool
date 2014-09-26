@@ -15,7 +15,7 @@ function onClickHandler(info, tab) {
                 height: 200
                 // incognito, top, left, ...
             });
-            chrome.runtime.sendMessage({greeting: "hello"});
+            chrome.runtime.sendMessage(info);
         });
   // if (info.menuItemId == "radio1" || info.menuItemId == "radio2") {
   //   console.log("radio item " + info.menuItemId +
@@ -53,7 +53,6 @@ chrome.runtime.onInstalled.addListener(function() {
   //var selection_id2 = chrome.contextMenus.create({"title": "Set Login Regex", "contexts":['selection'],
                                          // "id": "context_selection2"});
   //alert("this")
- chrome.events.addEventListener("mousemove", function() { console.log("dasdasda")})
   // // Create a parent item and two children.
  // chrome.contextMenus.create({"title": "Test parent item", "id": "parent"});
   //chrome.contextMenus.create(
