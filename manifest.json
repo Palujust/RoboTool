@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "RoboTool",
+  "description": "Helps Hubdoc devs create robots for downloading docs from various websites.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "Img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["JS/contextMenus.js"]
+  },
+  "icons": { "16": "Img/icon.png",
+           "48": "Img/icon.png",
+          "128": "Img/icon.png"
+  }
+}

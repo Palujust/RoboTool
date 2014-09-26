@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      @font-face {
+        font-family: Ubuntu;
+        src: url(Fonts/Ubuntu-R.ttf);
+      }
+      body {
+        min-width: 500px;
+        overflow-x: hidden;
+        font-family: Ubuntu;
+      }
+
+
+      img {
+        margin: 5px;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+      #top-logo {
+        border: 0px;
+        width: 30px;
+        height: 30px;
+        float: right;
+      }
+      hr {
+        width: 95%;
+        float: left;
+      }
+      table {
+         border-spacing: 10px;
+         text-align: left;
+      }
+      th {
+        font-weight: bold;
+      }
+      .status-image{
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="JS/popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  </head>
+  <body>
+  <h2>Robot Development Tool ver 0.1</h2>
+  <hr>
+  <br>
+  <br>
+  <h3>Information for this website</h3>
+
+  <table id="info-table">
+    <tbody>
+
+        <tr>
+            <td><img class = "status-image" src="Img/check.png"></td>
+            <td>Login Page URL</td>
+        </tr>
+        <tr>
+            <td><img class = "status-image" src="Img/x.png"></td>
+            <td>Login Page Regex</td>
+        </tr>
+        <tr>
+            <td><img class = "status-image" src="Img/check.png"></td>
+            <td>Invalid Creds Regex</td>
+        </tr>
+    </tbody>
+  </table>
+  <a href="#" class="clearButton">Clear All</a>
+  </body>
+</html>
+
