@@ -23,6 +23,6 @@ $(document).ready(function(){
 		//alert(JSON.stringify(data))
 
 		chrome.storage.sync.set(data);
-		
+		window.close()
 	})
 })
