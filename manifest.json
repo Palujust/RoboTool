@@ -10,7 +10,8 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ],
   "background": {
     "persistent": false,
