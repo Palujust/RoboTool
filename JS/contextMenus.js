@@ -11,7 +11,7 @@ function onClickHandler(info, tab) {
                 tabId: tab.id,
                 type: 'popup',
                 focused: true,
-                width: 500,
+                width: 650,
                 height: 200
                 // incognito, top, left, ...
             });
