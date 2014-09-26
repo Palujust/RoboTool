@@ -1,5 +1,3 @@
-var milestones = ['Login Page URL', 'Login Page Regex', 'Invalid Creds Regex']
-
 chrome.storage.onChanged.addListener(function(changes, areaName) {
     if (areaName === "sync") {
         for (var key in changes) {
@@ -64,6 +62,6 @@ function updateMilestone(index, new_val) {
         $(".status-image").eq(index).attr('src', 'Img/x.png');
     }
 }
-function deleteDeletedMilestone(index) {
+function updateDeletedMilestone(index) {
     updateMilestone(index, null);
 }
