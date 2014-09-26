@@ -1,9 +1,9 @@
 <!DOCTYPE html><html><head><title>Send Data to RoboTool</title></head><body>
 <h3>Selection:</h3>
 <hr> <br>
-<form action="">
-	<input type="radio" name="data_source" value="selectedText"><label id="lbl_selectedText"></label><br>
-	<input type="radio" name="data_source" value="URL"><label id="lbl_URL"></label>
+<form id="data_form" action="">
+	<input type="radio" id="selectedTextRadio" name="data_source" value="selectedText"><label id="lbl_selectedText"></label><br>
+	<input type="radio" id="URLRadio" name="data_source" value="URL"><label id="lbl_URL"></label>
 	<br>
 	<br>
 	Store as: 
@@ -31,9 +31,9 @@
   		<option value="">Billing Table Row - Payment Method [optional]</option>
   		<option value="">Billing Table Row - Payment Account Number [optional]</option>
 	</select>
-	<a href="#" class="clearButton">Save</a>
+	<a href="#" id="saveButton" class="clearButton">Save</a>
 </form>
-<script src="JS/dialog.js"></script>
 <script src="JS/jquery-ui/external/jquery/jquery.js"></script>
+<script src="JS/dialog.js"></script>
 <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </body></html>

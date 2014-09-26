@@ -54,7 +54,7 @@ chrome.runtime.onInstalled.addListener(function() {
                                          // "id": "context_selection2"});
   //alert("this")
   // // Create a parent item and two children.
- // chrome.contextMenus.create({"title": "Test parent item", "id": "parent"});
+  chrome.contextMenus.create({"title": "Add to RoboTool...", "id": "parent"});
   //chrome.contextMenus.create(
      // {"title": "Phantom", "parentId": "context_selection", "id": "phantom"});
   //chrome.contextMenus.create(
