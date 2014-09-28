@@ -12,7 +12,7 @@ function onClickHandler(info, tab) {
                 type: 'popup',
                 focused: true,
                 width: 650,
-                height: 200
+               height: 300
                 // incognito, top, left, ...
             });
             chrome.runtime.sendMessage(info);
